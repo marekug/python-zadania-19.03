@@ -17,4 +17,26 @@ x=np.linspace(-4,4,101)
 y=np.polyval(W1,x)
 plt.plot(x,y)
 plt.plot(3,a,'o')
+```
+Zadanie 3 z pierwszej listy zadan
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import numpy.random as npr
 
+n=30
+x=[]
+for i in range (30):
+    x.append(npr.randint(10))
+    x.append(npr.rand())
+    
+print(len(x))
+print(x)
+
+print('odwarcamy')
+
+y=x[::-1]
+print(y)
+
+plt.plot(x,y,'.b',x,y,'-k')
+```
